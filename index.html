@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Online CV and vCard for Wongsatorn Maaueai, Webmaster and Software Engineering graduate based in Bangkok, Thailand."
+    />
+    <meta property="og:title" content="Wongsatorn Maaueai | Online CV" />
+    <meta
+      property="og:description"
+      content="Professional profile, experience timeline, projects, skills, and contact details."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/profile-photo.png" />
+    <title>Wongsatorn Maaueai | Online CV</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#profile">Skip to profile</a>
+
+    <header class="topbar" aria-label="Main navigation">
+      <a class="brand" href="#profile" aria-label="Wongsatorn profile">
+        <span class="brand-mark">WS</span>
+        <span>Wongsatorn</span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#timeline">Timeline</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button
+        class="icon-button"
+        id="themeToggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <span aria-hidden="true">T</span>
+      </button>
+    </header>
+
+    <main id="profile" class="page-shell">
+      <section class="identity-panel" aria-labelledby="profileName">
+        <div class="portrait-wrap">
+          <img
+            id="profilePhoto"
+            src="assets/profile.jpg"
+            alt="Portrait of Wongsatorn Maaueai"
+          />
+        </div>
+        <p class="eyebrow" id="profileLocation"></p>
+        <h2 id="profileName"></h2>
+        <p class="role" id="profileRole"></p>
+        <p class="summary" id="profileSummary"></p>
+        <div class="quick-actions" aria-label="Profile actions">
+          <a
+            class="button primary"
+            id="resumeLink"
+            href="assets/Wongsatorn_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download CV
+          </a>
+          <button class="button" id="saveContact" type="button">
+            Save Contact
+          </button>
+          <button class="button ghost" id="printPage" type="button">
+            Print
+          </button>
+        </div>
+        <dl class="signal-list" id="profileSignals"></dl>
+      </section>
+
+      <section class="content-panel" aria-label="CV details">
+        <section class="section-block intro-grid" aria-labelledby="focusTitle">
+          <div>
+            <p class="eyebrow">Professional Focus</p>
+            <h2 id="focusTitle">Digital profile with work history</h2>
+          </div>
+          <p id="profileFocus"></p>
+        </section>
+
+        <section
+          class="section-block"
+          id="timeline"
+          aria-labelledby="timelineTitle"
+        >
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="timelineTitle">Work Timeline</h2>
+          </div>
+          <div class="timeline-list" id="timelineList"></div>
+        </section>
+
+        <section
+          class="section-block split-section"
+          id="skills"
+          aria-labelledby="skillsTitle"
+        >
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Capability</p>
+              <h2 id="skillsTitle">Skills</h2>
+            </div>
+            <div class="skill-cloud" id="skillCloud"></div>
+          </div>
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Education</p>
+              <h2>Education</h2>
+            </div>
+            <div class="education-list" id="educationList"></div>
+          </div>
+        </section>
+
+        <section
+          class="section-block"
+          id="projects"
+          aria-labelledby="projectsTitle"
+        >
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="projectsTitle">Projects</h2>
+          </div>
+          <div class="project-grid" id="projectGrid"></div>
+        </section>
+
+        <section
+          class="section-block contact-section"
+          id="contact"
+          aria-labelledby="contactTitle"
+        >
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contactTitle">Let's Connect</h2>
+            <p id="contactNote"></p>
+          </div>
+          <div class="contact-grid" id="contactGrid"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="footerName"></span>
+      <button class="link-button" id="copyLink" type="button">
+        Copy profile link
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
